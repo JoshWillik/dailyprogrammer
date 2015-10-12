@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+docker run -it --rm \
+  -v $(pwd)/src:/go/src/project.com/palindromes \
+  -w /go/src/project.com/palindromes/main\
+  \
+  golang \
+  bash
